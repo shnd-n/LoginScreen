@@ -33,6 +33,7 @@
             txtPW = new TextBox();
             btnLogin = new Button();
             lbErrorMsg = new Label();
+            visPW = new Button();
             SuspendLayout();
             // 
             // label1
@@ -94,11 +95,23 @@
             lbErrorMsg.Text = "아이디 또는 비밀번호가 맞지 않습니다.";
             lbErrorMsg.Visible = false;
             // 
+            // visPW
+            // 
+            visPW.Font = new Font("맑은 고딕", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            visPW.Location = new Point(436, 316);
+            visPW.Name = "visPW";
+            visPW.Size = new Size(115, 42);
+            visPW.TabIndex = 5;
+            visPW.Text = "패스워드 확인";
+            visPW.UseVisualStyleBackColor = true;
+            visPW.Click += visPW_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(563, 474);
+            Controls.Add(visPW);
             Controls.Add(lbErrorMsg);
             Controls.Add(btnLogin);
             Controls.Add(txtPW);
@@ -117,5 +130,6 @@
         private TextBox txtPW;
         private Button btnLogin;
         private Label lbErrorMsg;
+        private Button visPW;
     }
 }

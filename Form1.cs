@@ -22,6 +22,8 @@ namespace LoginScreen
             }
             else
             {
+                txtID.Text = "";
+                txtPW.Text = "";
                 lbErrorMsg.Visible = true;
             }
         }
@@ -80,6 +82,20 @@ namespace LoginScreen
             {
                 e.SuppressKeyPress = true; // 기본비프음방지
                 btnLogin.PerformClick();
+            }
+        }
+        bool vis = false;
+        private void visPW_Click(object sender, EventArgs e)
+        {
+            if (vis)
+            {
+                vis = false;
+                txtPW.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                vis = true;
+                txtPW.UseSystemPasswordChar = false;
             }
         }
     }
