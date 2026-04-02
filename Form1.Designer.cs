@@ -60,7 +60,7 @@
             // 
             txtPW.Font = new Font("맑은 고딕", 21.75F, FontStyle.Regular, GraphicsUnit.Point, 129);
             txtPW.ForeColor = Color.Silver;
-            txtPW.Location = new Point(72, 250);
+            txtPW.Location = new Point(72, 246);
             txtPW.Name = "txtPW";
             txtPW.Size = new Size(412, 46);
             txtPW.TabIndex = 3;
