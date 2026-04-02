@@ -17,11 +17,12 @@ namespace LoginScreen
 
             if (inputID == myID && inputPW == myPW)
             {
+                lbErrorMsg.Visible = false;
                 MessageBox.Show("로그인 성공!");
             }
             else
             {
-                MessageBox.Show("로그인 실패~");
+                lbErrorMsg.Visible = true;
             }
         }
 

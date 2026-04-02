@@ -32,6 +32,7 @@
             txtID = new TextBox();
             txtPW = new TextBox();
             btnLogin = new Button();
+            lbErrorMsg = new Label();
             SuspendLayout();
             // 
             // label1
@@ -81,17 +82,30 @@
             btnLogin.UseVisualStyleBackColor = true;
             btnLogin.Click += btnLogin_Click;
             // 
+            // lbErrorMsg
+            // 
+            lbErrorMsg.AutoSize = true;
+            lbErrorMsg.Font = new Font("맑은 고딕", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            lbErrorMsg.ForeColor = Color.Red;
+            lbErrorMsg.Location = new Point(72, 316);
+            lbErrorMsg.Name = "lbErrorMsg";
+            lbErrorMsg.Size = new Size(349, 25);
+            lbErrorMsg.TabIndex = 4;
+            lbErrorMsg.Text = "아이디 또는 비밀번호가 맞지 않습니다.";
+            lbErrorMsg.Visible = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(563, 474);
+            Controls.Add(lbErrorMsg);
             Controls.Add(btnLogin);
             Controls.Add(txtPW);
             Controls.Add(txtID);
             Controls.Add(label1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Login Screen";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -102,5 +116,6 @@
         private TextBox txtID;
         private TextBox txtPW;
         private Button btnLogin;
+        private Label lbErrorMsg;
     }
 }
