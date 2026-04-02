@@ -87,7 +87,7 @@
             lbErrorMsg.AutoSize = true;
             lbErrorMsg.Font = new Font("맑은 고딕", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 129);
             lbErrorMsg.ForeColor = Color.Red;
-            lbErrorMsg.Location = new Point(72, 316);
+            lbErrorMsg.Location = new Point(72, 312);
             lbErrorMsg.Name = "lbErrorMsg";
             lbErrorMsg.Size = new Size(349, 25);
             lbErrorMsg.TabIndex = 4;
